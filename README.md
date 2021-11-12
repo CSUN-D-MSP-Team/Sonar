@@ -3,7 +3,7 @@
 ### MaxSonar.py Class Diagram
 ```
 MaxSonar.Ultrasonic
-- DEVICE_ADDR  # Sensor I2C address
+- DEVICE_ADDR  **# Sensor I2C address
 - RANGE_COMMAND # Range command byte
 - INITIATE_READ # Initiate a read at the sensor address
 - I2CBUS # I2C Bus 
