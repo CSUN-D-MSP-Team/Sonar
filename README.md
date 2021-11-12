@@ -2,7 +2,6 @@
 
 
 ### MaxSonar.py Class Diagram
-```
 MaxSonar.Ultrasonic
 - DEVICE_ADDR *# Sensor I2C address*
 - RANGE_COMMAND *# Range command byte*
@@ -13,7 +12,6 @@ MaxSonar.Ultrasonic
 + start_sensor(): boolean # Initiate a write at sensor address and writes a range command
 + read_sensor(): int # Reports the last range value
 + take_range_reading(): int # Does start_sensor() and read_sensor() in one funcstion. Used with read_the_senor_example_default.py 
-```
 
 ### read_the_senor_example_default.py
 * Reads a range reading from default I2C bus and device address.
