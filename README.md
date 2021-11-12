@@ -1,7 +1,7 @@
 # Sonar
 
 MaxSonar.Ultrasonic
-
+'''
 - DEVICE_ADDR  # Sensor I2C address
 - RANGE_COMMAND # Range command byte
 - INITIATE_READ # Initiate a read at the sensor address
@@ -11,3 +11,4 @@ MaxSonar.Ultrasonic
 + start_sensor(): boolean
 + read_sensor(): int
 + take_range_reading(): int
+'''
