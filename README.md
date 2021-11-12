@@ -1,5 +1,6 @@
 # Sonar
 
+## MaxSonar.py Class Diagram
 ```
 MaxSonar.Ultrasonic
 - DEVICE_ADDR  # Sensor I2C address
@@ -12,3 +13,9 @@ MaxSonar.Ultrasonic
 + read_sensor(): int
 + take_range_reading(): int
 ```
+
+## read_the_senor_example_default
+* Reads a range reading from default I2C bus and device address.
+
+## read_the_senor_example_custom
+* Reads a range reading from a user defined I2C bus and device address.
