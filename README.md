@@ -3,6 +3,7 @@
 
 ### MaxSonar.py Class Diagram
 ```python
+# Encapsulation: '-' = private, '+' = public
 -DEVICE_ADDR # Sensor I2C address
 -RANGE_COMMAND # Range command byte
 -INITIATE_READ # Initiate a read at the sensor address
