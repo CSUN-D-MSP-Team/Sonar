@@ -50,7 +50,7 @@ if __name__ == '__main__':
 
 ```
 
-### MaxSonar.py Class
+### ultrasonic.py Class
 ```python
 from smbus import SMBus
 import time
