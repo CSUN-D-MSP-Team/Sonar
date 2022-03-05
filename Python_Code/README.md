@@ -1,6 +1,6 @@
 # Sonar
 
-#How to use code?
+## How to use code?
 1) Install smbus2 with pip:
 ```
 pip install smbus2
