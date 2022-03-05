@@ -5,7 +5,9 @@
 ```
 pip install smbus2
 ```
-- See technical documentation for i2c connection.
+- See technical documentation for i2c connection between the sonar and raspberry pi.
+
+### Code:
 
 ```python
 from smbus2 import SMBus #I2C
@@ -34,6 +36,7 @@ while True:
     except IOError as err:
         print(err)
 ```
-
-
-
+- Execute code in the command window:
+```
+python2 sonar.py
+```
