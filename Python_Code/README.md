@@ -1,11 +1,14 @@
 # Sonar
 
 ## How to use code?
-1) Install smbus2 with pip:
+1) Istall python2
+- Python2: https://www.python.org/downloads/
+-- Note: Code will also execute on python3, however some of the code may need to be changed to python3 syntax.
+2) Install smbus2 with pip:
 ```
 pip install smbus2
 ```
-2) See technical documentation for i2c connection between the sonar and raspberry pi.
+3) See technical documentation for i2c connection between the sonar and raspberry pi.
 
 ### Code:
 
@@ -36,7 +39,7 @@ while True:
     except IOError as err:
         print(err)
 ```
-3) Execute code in the command window:
+4) Execute code in the command window:
 ```
 python2 sonar.py
 ```
