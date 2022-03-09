@@ -3,7 +3,7 @@
 ## How to use code?
 1) Istall python2
 - Python2: https://www.python.org/downloads/
--- Note: Code will also execute on python3, however some of the code may need to be changed to python3 syntax.
+- Note: Code will also execute on python3, however some of the code may need to be changed to python3 syntax.
 2) Install smbus2 with pip:
 ```
 pip install smbus2
