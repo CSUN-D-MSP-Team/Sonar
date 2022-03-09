@@ -38,6 +38,7 @@ while True:
         print '---------------------------------'
     except IOError as err:
         print(err)
+    time.sleep(delay2)
 ```
 4) Execute code in the command window:
 ```
