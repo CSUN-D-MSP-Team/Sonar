@@ -42,5 +42,5 @@ while True:
 ```
 4) Execute code in the command window:
 ```
-python2 sonar.py
+python2 sonar_example.py
 ```
