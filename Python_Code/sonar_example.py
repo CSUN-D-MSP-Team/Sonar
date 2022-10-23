@@ -32,4 +32,3 @@ while True:
     except IOError as err:
         print(err)
     time.sleep(delay2)
-
