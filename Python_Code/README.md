@@ -41,6 +41,10 @@ while True:
     time.sleep(delay2)
 ```
 4) Execute code in the command window:
+i2c permission 
+```
+sudo chmod a+rw /dev/i2c-*
+```
 ```
 python2 sonar_example.py
 ```
