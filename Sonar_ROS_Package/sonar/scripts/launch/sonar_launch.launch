@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="sonar" type="sonar0x70_publisher.py" name="sonar0x70_pub_node" />
+	<node pkg="sonar" type="sonar0x72_publisher.py" name="sonar0x72_pub_node" />
+	<node pkg="sonar" type="sonar0x74_publisher.py" name="sonar0x74_pub_node" />
+	<node pkg="sonar" type="sonar_subscriber.py" name="sonar_sub_node" />
+</launch>
