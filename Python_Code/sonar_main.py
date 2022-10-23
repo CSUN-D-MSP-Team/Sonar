@@ -1,11 +1,19 @@
+#----------------------------------------
+#Engineer: Michael Granberry
+#Project: ARCS Smart Pallet
+#Device: Ultrasonic Sensor
+#Model: I2C MaxSonar EZ Series - MB1212
+#Last Modified Date: Oct 23, 2022
+#----------------------------------------
+
 from sonar import Sonar
 from datetime import datetime #Date
 
 
 def main():
-	s0x72 = Sonar(0x70)
-	s0x70 = Sonar(0x72)
-	s0x70 = Sonar(0x74)
+	s0x70 = Sonar(0x70)
+	s0x72 = Sonar(0x72)
+	s0x74 = Sonar(0x74)
 	while True:
 		print("---------------------")
 		print("0x70: " + str(s0x70.read_range()) + "cm")
