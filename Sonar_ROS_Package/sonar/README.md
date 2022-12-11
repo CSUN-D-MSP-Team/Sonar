@@ -1,1 +1,7 @@
-This folder called 'sonar' is a ROS package for the sonars. Put this folder in your ROS workspace.
+#ROS – Sonar Integration
+
+##This folder called 'sonar' is a ROS package for the sonars. Put this folder in your ROS workspace.
+
+The support of multiple user defined packages is a feature of ROS that makes it a practical solution for robotic systems. One such user defined package named, “sonar”, was developed which contains three publisher nodes for each sonar. The publisher nodes are named, “sonar0x70_publisher”, “sonar0x72_publisher”, and “sonar0x74_publisher”. In addition, a subscriber node and a launch file are also contained in the sonar package. Each publisher node has its own topic, “sonar0x70_range_topic”, “sonar0x72_range_topic”, and “sonar0x74_range_topic”. Each topic sends range data to the subscriber node at a rate of 10Hz. The subscriber node is named, “sonar_subscriber”, and here the data from all three sonar publisher nodes can be processed for object detection and avoidance. Furthermore, a launch file named, “sonar_launch.launch”, was created for efficiency. It will start the ROS master node (roscore) as well as run all of the publisher nodes and the subscriber node at once.
+
+Upon launching a terminal, the command “sudo chmod 777 /dev/i2c-1” must be used to enable the use of the I2C bus. Next, the command “roslaunch sonar sonar_launch.launch” is executed to run the publisher nodes and subscriber nodes as previously stated. The range data of sonar 0x70 can be viewed in the terminal by using the command “rostopic topicecho/sonar0x70_range_topic”. Changing the address in the topic name will allow the user to view data from the other sonars.

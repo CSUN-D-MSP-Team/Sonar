@@ -10,6 +10,6 @@ The communication protocol used with this sensor is the Inter-Integrated Circuit
 
 
 ![](images/sonari2c.jpeg) <br />
-Figure 1 Multi-Sensor Wiring Schematic
+Figure 2 Multi-Sensor Wiring Schematic
 
 To enable the I2C communication protocol on the Raspberry Pi the I2C-tools package had to be installed on the Ubuntu 18.04 operating system. The python library, smbus2, is used to send commands to the sensor. These commands consist of taking a range reading and reading the last reported range value. Having these two commands in a while loop allows for continuous range readings.
