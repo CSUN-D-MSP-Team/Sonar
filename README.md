@@ -1,5 +1,6 @@
 # Sonar
--This repository contains code for using the ultrasonic sensor with a Raspberry Pi, Arduino, and ROS.
+
+## This repository contains code for using the ultrasonic sensor with a Raspberry Pi, Arduino, and ROS.
 
 The ultrasonic sensors used in this project are the MB1212 I2CXL-MaxSonar-EZ1 as shown in figure 1. They operate on 3 to 5 volts DC, which provides short to long-range detection. This sensor provides range readings with a precise centimeter resolution and can detect objects from 25 cm to 764 cm away at a rate of 10Hz (100 ms). The MB1212 is equipped with a transducer that is used for sending and receiving ultrasonic sound. The time it takes for the ultrasonic sound to hit an object and reflect back is used to calculate the object's distance. More specifically, 𝐷𝑖𝑠𝑡𝑎𝑛𝑐𝑒 = (𝑇𝑖𝑚𝑒 𝑜𝑓 𝑓𝑙𝑖𝑔h𝑡 𝑜𝑓 𝑠𝑜𝑢𝑛𝑑 𝑤𝑎𝑣𝑒) / (2*(Speed of Sound)).
 
