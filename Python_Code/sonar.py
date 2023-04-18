@@ -24,6 +24,13 @@ class Sonar:
 			time.sleep(self.delay1)
 			rawData = i2cbus.read_word_data(self.i2cAddress, self.initRead) #Initiate a read at the sensor address. Word = 2bytes.
 			rangeValue = (rawData >> 8) & 0xff #Right shift 8-bits. Mask with 0x00ff.
+			
+			# start test code
+			rangeValueh = (rawData >> 8) & 0xff 
+			rangeValuel = ((rawData >> 0) & 0xff) 
+			rangeValuead = ((rawData >> 8) & 0xff) + ((rawData >> 0) & 0xff)
+			# end test code
+			
 			i2cbus.close()
 			return rangeValue
 		except IOError as err:
